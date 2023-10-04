@@ -5,6 +5,8 @@
   --info-tab-color: #44a080;
   --form-backgroung-color: #ffc845;
   --form-button-color: #279989;
+  --primary-font-color: #fff;
+  --secondary-font-color: #000;
 }
 
 *,
@@ -15,6 +17,7 @@
 
 body {
   margin: 0;
+  font-family: var(--system-ui);
 }
 
 h1,
@@ -32,6 +35,10 @@ ul {
   padding: 0;
 }
 
+nav {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -39,4 +46,30 @@ a {
 
 button {
   font: inherit;
+}
+
+.main-header {
+  display: flex;
+  padding: 0.5rem;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  color: var(--primary-font-color);
+}
+
+.main-header .header-title {
+  font-size: 1rem;
+}
+
+.main-header .header-nav > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.header-nav > ul li {
+  margin: 0 0.25rem 0 0.25rem;
 }
