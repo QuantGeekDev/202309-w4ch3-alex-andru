@@ -1,3 +1,12 @@
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --header-color: #279989;
+  --info-tab-color: #44a080;
+  --form-backgroung-color: #ffc845;
+  --form-button-color: #279989;
+}
+
 *,
 ::before,
 ::after {
@@ -27,15 +36,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 button {
   font: inherit;
-}
-
-:root {
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --header-color: #279989;
-  --info-tab-color: #44a080;
-  --form-backgroung-color: #ffc845;
-  --form-button-color: #279989;
 }
