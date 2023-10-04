@@ -3,7 +3,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --header-color: #279989;
   --info-tab-color: #44a080;
-  --form-backgroung-color: #ffc845;
+  --form-background-color: #ffc845;
   --form-button-color: #279989;
   --primary-font-color: #fff;
   --secondary-font-color: #000;
@@ -46,6 +46,18 @@ a {
 
 button {
   font: inherit;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--form-background-color);
+}
+
+input {
+  border: none;
 }
 
 .main-header {
@@ -59,7 +71,7 @@ button {
 }
 
 .main-header .header-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .main-header .header-nav > ul {
@@ -67,7 +79,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .header-nav > ul li {
@@ -81,4 +93,37 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.purchased-quantity-info {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-section {
+  padding: 1rem;
+  background-color: var(--form-background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-submit-button {
+  color: var(--primary-font-color);
+  padding: 0.5rem;
+  background-color: var(--form-button-color);
+  width: 30%;
+}
+
+.product-form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.product-form input {
+  height: 2rem;
+}
+
+.product-form * {
+  margin: 0.3rem;
 }
