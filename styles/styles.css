@@ -73,3 +73,12 @@ button {
 .header-nav > ul li {
   margin: 0 0.25rem 0 0.25rem;
 }
+
+.info-tab {
+  background-color: var(--info-tab-color);
+  color: var(--primary-font-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
